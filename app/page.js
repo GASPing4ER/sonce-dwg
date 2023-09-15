@@ -19,7 +19,7 @@ import { useState } from 'react';
 // fonts imports
 const outfit = Outfit({ subsets: ['latin'] })
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
-const lincoln = localFont({ src: './lincoln.otf' })
+const lincoln = localFont({ src: './Lincoln.otf' })
 
 // home page declaration
 export default function Home() {
