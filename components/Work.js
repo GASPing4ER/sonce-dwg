@@ -34,7 +34,7 @@ const Work = (props) => {
             onClick={props.handle}
         />
         <div className='flexing'>
-            <Image src={images[currentIndex]} width={500} />
+            <Image src={images[currentIndex]} width={600} />
         </div>
     </div>
   )

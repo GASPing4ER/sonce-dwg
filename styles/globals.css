@@ -21,7 +21,7 @@ header {
 .star-icon {
     position: absolute;
     top: 50%; /* Move the top of the h1 to the vertical center */
-    left: 24%; /* Move the left of the h1 to the horizontal center */
+    left: 24.5%; /* Move the left of the h1 to the horizontal center */
     transform: translate(-50%, -50%);
 }
 
@@ -36,7 +36,7 @@ header {
     margin: 0;
     position: absolute;
     top: 50%; /* Move the top of the h1 to the vertical center */
-    left: 72.5%; /* Move the left of the h1 to the horizontal center */
+    left: 71.5%; /* Move the left of the h1 to the horizontal center */
     transform: translate(-50%, -50%);
 }
 
@@ -64,7 +64,7 @@ header {
 .toggle-icon {
     position: absolute;
     top: 88%; /* Move the top of the h1 to the vertical center */
-    left: 85.5%; /* Move the left of the h1 to the horizontal center */
+    left: 84%; /* Move the left of the h1 to the horizontal center */
     transform: translate(-50%, -50%);
 }
 
@@ -102,6 +102,12 @@ header {
     background-color: #E8E7E6;
     border: 1px solid #E8E7E6;
     color: #000;
+}
+
+.dark-button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .flex {
@@ -177,6 +183,8 @@ main button {
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
+    z-index: 1;
+    position: relative;
 }
 
 .solo-section {
@@ -186,6 +194,7 @@ main button {
 
 .solo-section button {
     font-size: 22px;
+    padding: 15px 30px;
 }
 
 @media (max-width: 899px) {

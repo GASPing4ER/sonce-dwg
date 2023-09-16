@@ -68,8 +68,8 @@ export default function Home() {
           src={isDarkTheme ? ToggleDark : ToggleLight} // Replace with the actual image path
           alt="toggle icon"
           className='toggle-icon'
-          width={100} // Set the desired width
-          height={100} // Set the desired height
+          width={150} // Set the desired width
+          height={150} // Set the desired height
           onClick={handleThemeSwitch}
         />
       </header>
