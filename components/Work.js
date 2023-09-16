@@ -6,9 +6,11 @@ import work_4 from "../public/assets/imgs/4-14.jpg"
 import work_5 from "../public/assets/imgs/5-14.jpg"
 import work_6 from "../public/assets/imgs/6-14.jpg"
 
+import ArrowDark from "../public/assets/icons/b1.png"
+
 import Image from 'next/image'
 
-const Work = () => {
+const Work = (props) => {
     const images = [work_1, work_2, work_3, work_4, work_5, work_6];
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,8 +25,17 @@ const Work = () => {
     }, []);
 
   return (
+        
     <div className='work'>
+        <Image 
+            src={ArrowDark}
+            width={100}
+            className='arrow-left'
+            onClick={props.handle}
+        />
+        <div className='flexing'>
             <Image src={images[currentIndex]} width={500} />
+        </div>
     </div>
   )
 }

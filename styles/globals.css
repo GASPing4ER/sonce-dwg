@@ -228,7 +228,15 @@ main button {
     bottom: 0; /* Align it to the bottom of the viewport */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     z-index: 999; /* Set a high z-index to ensure it's on top of other elements */
+}
+
+.flexing {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.arrow-left {
+    rotate: 90deg;
+    cursor: pointer;
 }

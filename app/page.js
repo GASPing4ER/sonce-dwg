@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div className='solo-section'><a href="mailto:info@sonce-dwg.io"><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>let's create</button></a></div>
       </main>
-      {isWorkOpen ? <Work /> : ""}
+      {isWorkOpen ? <Work handle={handleWorkSwitch} /> : ""}
     </>
   )
 }
