@@ -18,7 +18,7 @@ const Work = (props) => {
     // Create an interval to switch images every 2 seconds
     const intervalId = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 1000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
