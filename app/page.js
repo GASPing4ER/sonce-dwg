@@ -15,6 +15,7 @@ import StarDark from "../public/assets/icons/b3.png"
 
 // react imports
 import { useState } from 'react';
+import Work from '@components/Work';
 
 // fonts imports
 const outfit = Outfit({ subsets: ['latin'] })
@@ -31,6 +32,7 @@ export default function Home() {
 
   // declare initial state for dark theme based on time of day
   const [isDarkTheme, setIsDarkTheme] = useState(!isDaytime)
+  const [isWorkOpen, setIsWorkOpen] = useState(false)
 
   // create a variable for dark theme classNames, so it is cleaner
   const themeVarClass = isDarkTheme ? "dark" : "light";
@@ -38,6 +40,10 @@ export default function Home() {
   // function for handling toggle dark theme
   const handleThemeSwitch = () => {
     setIsDarkTheme(prev => !prev)
+  }
+
+  const handleWorkSwitch = () => {
+    setIsWorkOpen(prev => !prev)
   }
 
   return (
@@ -78,7 +84,7 @@ export default function Home() {
         <div className="box flex team">
           <h1 className={lincoln.className}>SONCE. DWG, CROSS-CREATIVE STUDIO WITH A MISSION</h1>
           <p className={outfit.className}>KREATIVNI KOLEKTIV DIZAJNERJEV, ARHITEKTOV IN PROGRAMERJEV. Združujemo dizajn in tehnično znanje potrebno za izvedbo jasne in sporočilne podobe vašega branda.</p>
-          <div><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>our work</button></div>
+          <div><button onClick={handleWorkSwitch} className={`${themeVarClass}-button ${spaceGrotesk.className}`}>our work</button></div>
         </div>
         <div className="box flex pricing">
           <h1 className={lincoln.className}>DOWN TO EARTH, PA CEPRAV S SONCA</h1>
@@ -91,6 +97,7 @@ export default function Home() {
         </div>
         <div className='solo-section'><a href="mailto:info@sonce-dwg.io"><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>let's create</button></a></div>
       </main>
+      {isWorkOpen ? <Work /> : ""}
     </>
   )
 }
