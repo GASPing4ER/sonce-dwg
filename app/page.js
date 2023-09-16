@@ -83,19 +83,22 @@ export default function Home() {
         />
         <div className="box flex team">
           <h1 className={lincoln.className}>SONCE. DWG, CROSS-CREATIVE STUDIO WITH A MISSION</h1>
-          <p className={outfit.className}>KREATIVNI KOLEKTIV DIZAJNERJEV, ARHITEKTOV IN PROGRAMERJEV. Združujemo dizajn in tehnično znanje potrebno za izvedbo jasne in sporočilne podobe vašega branda.</p>
+          <p className={outfit.className}>
+Nasa domena zajema vse, od oblikovanja identitete vase znamke, oblikovanja spletnih strani, izdelkov, produktne fotografije, prilagojenih graficnih resitev in arhitekturniega oblikovanja prostorov interierja. Trdno verjamemo, da si vsaka ideja zasluzi podobo, ki izraza njeno avtenticnost.
+</p>
           <div><button onClick={handleWorkSwitch} className={`${themeVarClass}-button ${spaceGrotesk.className}`}>our work</button></div>
         </div>
         <div className="box flex pricing">
           <h1 className={lincoln.className}>DOWN TO EARTH, PA CEPRAV S SONCA</h1>
-          <p className={outfit.className}>KREATIVNI KOLEKTIV DIZAJNERJEV, ARHITEKTOV IN PROGRAMERJEV. Združujemo dizajn in tehnično znanje potrebno za izvedbo jasne in sporočilne podobe vašega branda.</p>
+          <p className={outfit.className}>Nasa uspesnost se rodi iz treh kljucnih nacel: Inovativnost - srce vsakega projekta, Ucinkovitost - vec kot le lepota, gre za funkcionalnost, Jasnost - s svojim delom prikazemo bistvo, ki ga kot znamka zeli komunicirati.</p>
           <div><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>pricing</button></div>
         </div>
         <div className="box flex other">
-          <h1 className={lincoln.className}>BUREK SA SIROM</h1>
-          <p className={outfit.className}>KREATIVNI KOLEKTIV DIZAJNERJEV, ARHITEKTOV IN PROGRAMERJEV. Združujemo dizajn in tehnično znanje potrebno za izvedbo jasne in sporočilne podobe vašega branda.</p>
+          <h1 className={lincoln.className}>SOLAR TEAM</h1>
+          <p className={outfit.className}>
+Kreativna skupina oblikovalcev, arhitektov in programerjev. Povezujemo oblikovanje in tehnicno strokovnost, potrebno za ustvarjanje jasne in komunikativne podobe vase znamke.</p>
         </div>
-        <div className='solo-section'><a href="mailto:info@sonce-dwg.io"><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>let's create</button></a></div>
+        <div className='solo-section'><a href="mailto:info@sonce-dwg.io"><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>ustvarjajte z nami</button></a></div>
       </main>
       {isWorkOpen ? <Work handle={handleWorkSwitch} /> : ""}
     </>
