@@ -9,7 +9,7 @@ import work_5 from "../public/assets/imgs/5-14.jpg"
 import work_6 from "../public/assets/imgs/6-14.jpg"
 
 import brands_2 from "../public/assets/brands/creapro.png"
-import brands_3 from "../public/assets/brands/aneki.jpg"
+import brands_3 from "../public/assets/brands/aneki.png"
 import brands_4 from "../public/assets/brands/dunkin.png"
 import brands_5 from "../public/assets/brands/impero.png"
 import brands_6 from "../public/assets/brands/amareen.png"
