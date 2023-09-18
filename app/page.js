@@ -84,8 +84,8 @@ export default function Home() {
         <div className="box flex team">
           <h1 className={lincoln.className}>SONCE. DWG, CROSS-CREATIVE STUDIO WITH A MISSION</h1>
           <p className={outfit.className}>
-Nasa domena zajema vse, od oblikovanja identitete vase znamke, oblikovanja spletnih strani, izdelkov, produktne fotografije, prilagojenih graficnih resitev in arhitekturniega oblikovanja prostorov interierja. Trdno verjamemo, da si vsaka ideja zasluzi podobo, ki izraza njeno avtenticnost.
-</p>
+            Nasa domena zajema vse, od oblikovanja identitete vase znamke, oblikovanja spletnih strani, izdelkov, produktne fotografije, prilagojenih graficnih resitev in arhitekturniega oblikovanja prostorov interierja. Trdno verjamemo, da si vsaka ideja zasluzi podobo, ki izraza njeno avtenticnost.
+          </p>
           <div><button onClick={handleWorkSwitch} className={`${themeVarClass}-button ${spaceGrotesk.className}`}>our work</button></div>
         </div>
         <div className="box flex pricing">
@@ -96,9 +96,12 @@ Nasa domena zajema vse, od oblikovanja identitete vase znamke, oblikovanja splet
         <div className="box flex other">
           <h1 className={lincoln.className}>SOLAR TEAM</h1>
           <p className={outfit.className}>
-Kreativna skupina oblikovalcev, arhitektov in programerjev. Povezujemo oblikovanje in tehnicno strokovnost, potrebno za ustvarjanje jasne in komunikativne podobe vase znamke.</p>
+            Kreativna skupina oblikovalcev, arhitektov in programerjev. Povezujemo oblikovanje in tehnicno strokovnost, potrebno za ustvarjanje jasne in komunikativne podobe vase znamke.
+          </p>
         </div>
         <div className='solo-section'><a href="mailto:info@sonce-dwg.io"><button className={`${themeVarClass}-button ${spaceGrotesk.className}`}>ustvarjajte z nami</button></a></div>
+        <h1 className={`${lincoln.className} footer-h1`}>info@sonce.dwg.io</h1>
+        <h1 className={`${lincoln.className} footer-h1`}>NIC STIRI NIC DVA ENA STIRI DVA ENA ENA</h1>
       </main>
       {isWorkOpen ? <Work handle={handleWorkSwitch} /> : ""}
     </>

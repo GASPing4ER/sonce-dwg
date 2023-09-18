@@ -116,7 +116,7 @@ header {
 }
 
 main {
-    height: 100vh;
+    height: auto;
     padding: 0 100px;
     justify-content: center;
 }
@@ -145,6 +145,13 @@ main {
     }
     .dwg {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .toggle-icon { 
+        width: 150px;
+        height: auto;
     }
 }
 
@@ -226,26 +233,93 @@ main button {
 
 .work {
     height: 100vh;
-    background-image: url("../public/assets/imgs/work-05.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed; /* Fix the div to the viewport */
+    background-color: #000;
+    position: fixed; 
     top: 0; /* Align it to the top of the viewport */
     left: 0; /* Align it to the left of the viewport */
     right: 0; /* Align it to the right of the viewport */
     bottom: 0; /* Align it to the bottom of the viewport */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     z-index: 999; /* Set a high z-index to ensure it's on top of other elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 999px) {
+    .flexing img {
+        width: 600px;
+        height: auto;
+    }
+
+    .work-lower img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (max-width: 699px) {
+    .work-lower img {
+        width: 30px;
+    }
+
+    .flexing img {
+        width: 500px;
+    }
+
+    .work-lower {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 499px) {
+    .work {
+        padding: 25px 0;
+    }
+    .flexing img {
+        width: 300px;
+    }
+}
+
+.work-upper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .flexing {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    padding: 10px 0;
+}
+
+.work-lower {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
 }
 
 .arrow-left {
     rotate: 90deg;
     cursor: pointer;
+}
+
+.work h1 {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+}
+
+.work .dwg {
+    font-size: 25px;
+}
+
+.footer-h1 {
+    font-size: 15px;
+    margin: 5px;
 }
